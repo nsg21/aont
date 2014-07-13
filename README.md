@@ -20,9 +20,8 @@ which can be meaningfully reassembled only when all come together.
 
 Usage:
 
-    aont [/t]  [/n:number] [/s:size] [inputfile] [outputfile|name-template]
-    aont /r inputfiles outputfile
-    aont /v inputfiles
+    aont [/t] [/p /v] [/n:number] [/s:size] input-file output-file-name-template
+    aont [/r] [/p /v] input-files output-file
 
 `/t` -- apply all-or-nothing transformation to a file
 
@@ -32,10 +31,14 @@ Usage:
 
 `/r` -- restore file to its original form and write result to outputfile
 
-`/v` -- display which files and in what order will be processed
+`/v` -- verbose operation (for troubleshooting)
+
+`/p` -- no transformation, split/merge plaintext
 
 If outputfile name is missing, it is genereated by appending suffix `.aont` for
 forward transformation and `.restored` for reverse transformation.
+
+File name template may contain an asterisk. In this case actual output file names will have consecutive numbers (1, 2, 3, ...) in place of the asterisk. As many files files as required by specifdied options will be generated.
 
 Use modes
 ---------
