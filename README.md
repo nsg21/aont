@@ -38,7 +38,7 @@ Usage:
 If outputfile name is missing, it is genereated by appending suffix `.aont` for
 forward transformation and `.restored` for reverse transformation.
 
-File name template may contain an asterisk. In this case actual output file names will have consecutive numbers (1, 2, 3, ...) in place of the asterisk. As many files files as required by specifdied options will be generated.
+File name template may contain an asterisk. In this case actual output file names will have consecutive numbers (1, 2, 3, ...) in place of the asterisk. As many files files as required by specified options will be generated.
 
 Use modes
 ---------
